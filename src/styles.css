@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { 
+  @apply bg-gray-50 text-gray-800; 
+}
+
+.navbar { 
+  @apply bg-blue-600 p-4 flex; 
+  /* Removed gap-4 to prevent unintended spacing between navbar items */
+}
+
+.btn { 
+  @apply bg-blue-500 text-white py-2 px-4 rounded; 
+}
+
+.q-form, .login-form, .create-quiz, .attempt-quiz, .dashboard, .leaderboard, .analytics { 
+  @apply max-w-xl mx-auto my-8 p-4 bg-white rounded shadow; 
+}
+
+.progress-bar-bg { 
+  @apply w-full bg-gray-200 h-2 rounded; 
+}
+
+.progress-bar-fg { 
+  @apply bg-green-500 h-2 rounded; 
+}
+
+.stats-card { 
+  @apply bg-white p-4 m-2 rounded shadow text-center; 
+}
